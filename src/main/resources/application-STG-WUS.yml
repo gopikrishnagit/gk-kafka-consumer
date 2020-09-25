@@ -1,0 +1,15 @@
+kafka:
+  bootstrapServers: kafka-358735236-9-952505781.prod-westus-az.kafka-shared-non-prod.ms-df-messaging.prod-az-westus-1.prod.us.walmart.net:9092,kafka-358735236-1-886374106.prod-westus-az.kafka-shared-non-prod.ms-df-messaging.prod-az-westus-1.prod.us.walmart.net:9092,kafka-358735236-2-886374113.prod-westus-az.kafka-shared-non-prod.ms-df-messaging.prod-az-westus-1.prod.us.walmart.net:9092,kafka-358735236-8-952505778.prod-westus-az.kafka-shared-non-prod.ms-df-messaging.prod-az-westus-1.prod.us.walmart.net:9092,kafka-358735236-4-952497873.prod-westus-az.kafka-shared-non-prod.ms-df-messaging.prod-az-westus-1.prod.us.walmart.net:9092,kafka-358735236-3-886374120.prod-westus-az.kafka-shared-non-prod.ms-df-messaging.prod-az-westus-1.prod.us.walmart.net:9092,kafka-358735236-7-952505775.prod-westus-az.kafka-shared-non-prod.ms-df-messaging.prod-az-westus-1.prod.us.walmart.net:9092,kafka-358735236-6-952497879.prod-westus-az.kafka-shared-non-prod.ms-df-messaging.prod-az-westus-1.prod.us.walmart.net:9092,kafka-358735236-5-952497876.prod-westus-az.kafka-shared-non-prod.ms-df-messaging.prod-az-westus-1.prod.us.walmart.net:9092
+  autoCommitConfig: false
+  maxPollRecords: 1
+  maxPollIntervalMs: 300000
+  heartbeatIntervalMs: 3000
+  sessionTimeoutMs: 10000
+  listenerConcurrency: 1
+output:
+  folderPath: /Users/g0k00kk/Desktop/Hermes/gdpData/STG-WUS/25092020
+input:
+  searchPatternInMessage: hermes
+logging:
+  file:
+    name: /Users/g0k00kk/Desktop/Hermes/gdpData/STG-WUS/25092020/logs/gk-kafka-consumer.log
