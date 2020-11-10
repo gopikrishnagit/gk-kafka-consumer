@@ -12,4 +12,8 @@ import org.springframework.context.annotation.Configuration;
 public class InputProperties
 {
 	private String searchPatternInMessage;
+
+	private boolean writeToFile;
+
+	private boolean producetoDestBrokers;
 }

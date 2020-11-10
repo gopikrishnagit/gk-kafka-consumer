@@ -12,6 +12,7 @@ import org.springframework.context.annotation.Configuration;
 public class KafkaProperties
 {
 	private String bootstrapServers;
+	private String destBootstrapServers;
 	private boolean autoCommitConfig;
 	private int maxPollRecords;
 	private int maxPollIntervalMs;
